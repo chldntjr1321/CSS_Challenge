@@ -1,0 +1,63 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body {
+  background-color: #f6f6f6;
+  padding: 50px 25px;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+  font-family: serif;
+  max-width: 770px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.grid {
+  height: 45vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  font-weight: 600;
+}
+.grid div {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+.bigbox {
+  grid-column: span 2;
+  grid-row: span 2;
+  font-size: 35px;
+}
+.smallbox {
+  font-size: 20px;
+}
+
+.grid :nth-child(1) {
+  background-color: #d9e7de;
+  color: #f44708;
+}
+.grid :nth-child(2) {
+  background-color: #008a69;
+  color: white;
+}
+.grid :nth-child(3) {
+  background-color: #f44708;
+  color: white;
+}
+.grid :nth-child(4) {
+  background-color: #f7abc5;
+  color: #f44708;
+}
+.grid :nth-child(5) {
+  background-color: #5f5fa9;
+  color: white;
+}
+.grid :nth-child(6) {
+  background-color: #ffc127;
+  color: #f44708;
+}
+.grid :nth-child(7) {
+  background-color: #f97374;
+  color: white;
+}
