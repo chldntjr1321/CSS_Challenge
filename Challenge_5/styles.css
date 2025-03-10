@@ -1,0 +1,101 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body {
+  background-color: black;
+  padding: 50px 25px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  max-width: 770px;
+  width: 100%;
+  margin: 0 auto;
+  height: 100vh;
+  text-transform: uppercase;
+}
+.grid {
+  height: 72vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  overflow: hidden;
+}
+
+.changebox {
+  background-color: black;
+  color: white;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  font-size: 26px;
+  padding: 10px 0px 0px 10px;
+  display: flex;
+}
+.spin {
+  display: inline-block;
+  transform: rotate(180deg);
+}
+.space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav {
+  background-color: #ff1501;
+  grid-column-start: 1;
+  grid-row: span 2;
+  font-size: 20px;
+  padding: 12px 0px 0px 10px;
+}
+.nav li {
+  padding-bottom: 5px;
+}
+
+.purplebox {
+  background-color: #6c00fe;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.whitebox {
+  background-color: white;
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.ticketbox {
+  background-color: #ffca04;
+  grid-column: 2/3;
+  grid-row: 3/4;
+  font-size: 20px;
+  padding: 10px 0px 0px 10px;
+}
+
+.speakers {
+  grid-column-start: 3;
+  grid-row: 1/-1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: white;
+  padding: 10px 0px 0px 10px;
+}
+.speakers li {
+  padding-bottom: 5px;
+}
+
+.header {
+  font-size: 12px;
+  padding-bottom: 20px;
+}
+.highlight {
+  background-color: #6c00fe;
+}
+.artists {
+  grid-column-start: 4;
+  grid-row: 1/-1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: white;
+  padding: 10px 0px 0px 10px;
+}
+.artists li {
+  padding-bottom: 5px;
+}
